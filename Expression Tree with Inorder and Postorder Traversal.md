@@ -19,11 +19,53 @@ To write a Python program to build the given expression tree and print the inord
 ## PROGRAM:
 
 ```
-WRITE YOUR CODE
+
+# Name: Vikram GS
+# Reg No: 212222060296
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.value, end=" ")
+        inorder(root.right)
+
+def postorder(root):
+    if root:
+        postorder(root.left)
+        postorder(root.right)
+        print(root.value, end=" ")
+
+# Sample Tree
+root = Node('*')
+root.left = Node('+')
+root.right = Node('4')
+root.left.left = Node('3')
+root.left.right = Node('2')
+
+print("Inorder Traversal:")
+inorder(root)
+
+print("\nPostorder Traversal:")
+postorder(root)
+
+
 ```
 
 ## OUTPUT
 ```
+Inorder Traversal:
+3 + 2 * 4
+Postorder Traversal:
+3 2 + 4 *
+
 ```
 
 ## RESULT
+
+Expression tree traversals are performed successfully.
