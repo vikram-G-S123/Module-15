@@ -22,11 +22,34 @@ To write a Python program to build a binary search tree using a built-in functio
 ## PROGRAM:
 
 ```
-ENTER YOUR CODE
+# Name: Vikram GS
+# Reg No: 212222060296
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+root = Node(1.5)
+root.left = Node(2.5)
+root.right = Node(3.5)
+
+print("Root:", root.value)
+print("Left Child:", root.left.value)
+print("Right Child:", root.right.value)
+
+
 ```
 
 ## OUTPUT
 ```
+Root: 1.5
+Left Child: 2.5
+Right Child: 3.5
+
 ```
 
 ## RESULT
+
+Binary tree with float values is created successfully.
