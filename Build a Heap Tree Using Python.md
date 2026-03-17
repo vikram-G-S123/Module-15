@@ -19,11 +19,30 @@ To write a Python program to build a heap tree using appropriate Python package 
 ## PROGRAM:
 
 ```
-WRITE YOUR CODE
+
+# Name: Vikram GS
+# Reg No: 212222060296
+
+import heapq
+
+heap = []
+
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 20)
+
+print("Heap:", heap)
+
+print("Smallest element:", heapq.heappop(heap))
+
 ```
 
 ## OUTPUT
 ```
+Heap: [5, 10, 20]
+Smallest element: 5
+
 ```
 
 ## RESULT
+Heap tree is implemented successfully using heapq.
