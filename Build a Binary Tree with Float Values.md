@@ -19,11 +19,27 @@ To write a Python program to build a binary tree with a root, left, and right no
 ## PYTHON PROGRAM
 
 ```
-ENTER YOUR CODE
+# Name: Vikram GS
+# Reg No: 212222060296
+
+import bisect
+
+bst = []
+
+elements = [10, 5, 15, 3, 7]
+
+for el in elements:
+    bisect.insort(bst, el)
+
+print("BST (sorted list):", bst)
 ```
 
 ## OUTPUT
 ```
+BST (sorted list): [3, 5, 7, 10, 15]
+
 ```
 
 ## RESULT
+
+Binary Search Tree is simulated successfully using built-in functions.
